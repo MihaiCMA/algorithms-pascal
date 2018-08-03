@@ -1,0 +1,12 @@
+PROGRAM pimpare;
+VAR x:LONGINT;
+BEGIN
+READ(x);
+WRITE(x MOD 10);
+x:=x DIV 100;
+WHILE x > 0 DO
+BEGIN
+WRITE(x MOD 10);
+x:=x DIV 100;
+END;
+END.
